@@ -7,6 +7,8 @@ Confidential and Proprietary - Protected under copyright and other laws.
 ==============================================================================*/
 
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Collections;
 using Vuforia;
 
 /// <summary>
@@ -14,6 +16,19 @@ using Vuforia;
 /// </summary>
 public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandler
 {
+    public Canvas canvas_inicio;
+    public Text m_texto_inicio;
+
+
+    #region PRIVATE_MEMBERS
+
+//    private Vuforia.Image.PIXEL_FORMAT mPixelFormat = Vuforia.Image.PIXEL_FORMAT.UNKNOWN_FORMAT;
+
+    private bool mAccessCameraImage = true;
+    private bool mFormatRegistered = false;
+
+    #endregion // PRIVATE_MEMBERS
+
     #region PROTECTED_MEMBER_VARIABLES
 
     protected TrackableBehaviour mTrackableBehaviour;
@@ -24,9 +39,14 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     protected virtual void Start()
     {
+        m_texto_inicio.text = "Mire no Marcador";
         mTrackableBehaviour = GetComponent<TrackableBehaviour>();
         if (mTrackableBehaviour)
             mTrackableBehaviour.RegisterTrackableEventHandler(this);
+
+        var vuforia = VuforiaARController.Instance;
+        vuforia.RegisterVuforiaStartedCallback(OnVuforiaStarted);
+//        vuforia.RegisterOnPauseCallback(OnPause());
     }
 
     protected virtual void OnDestroy()
@@ -90,8 +110,10 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         // Enable canvas':
         foreach (var component in canvasComponents)
             component.enabled = true;
+        //
+        m_texto_inicio.text = "";
+        
     }
-
 
     protected virtual void OnTrackingLost()
     {
@@ -110,7 +132,25 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         // Disable canvas':
         foreach (var component in canvasComponents)
             component.enabled = false;
+        //
+        m_texto_inicio.text = "Mire no Marcador";
+
     }
+
+    void OnVuforiaStarted()
+    {
+        CameraDevice.Instance.SetFocusMode(CameraDevice.FocusMode.FOCUS_MODE_CONTINUOUSAUTO);
+
+    }  
+
+ //       void OnPause(bool paused)
+   //     {
+     //       if (!paused)
+       //     {
+         //       CameraDevice.Instance.SetFocusMode(CameraDevice.FocusMode.FOCUS_MODE_CONTINUOUSAUTO);
+           // }
+        //}
+    
 
     #endregion // PROTECTED_METHODS
 }

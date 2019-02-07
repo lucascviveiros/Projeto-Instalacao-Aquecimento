@@ -241,11 +241,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\SceneScript.cs" />
+    <Compile Include="Assets\BackMenuControll.cs" />
+    <Compile Include="Assets\InstallController.cs" />
+    <Compile Include="Assets\Scripts\AnimationController.cs" />
+    <Compile Include="Assets\Scripts\APITestCall.cs" />
+    <Compile Include="Assets\Scripts\CanvasController.cs" />
+    <Compile Include="Assets\Scripts\HololensAnimControll.cs" />
+    <Compile Include="Assets\Scripts\SceneScript.cs" />
+    <Compile Include="Assets\Scripts\VirtualButtonController.cs" />
     <Compile Include="Assets\Vuforia\Scripts\DefaultInitializationErrorHandler.cs" />
     <Compile Include="Assets\Vuforia\Scripts\DefaultTrackableEventHandler.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Editor\Vuforia\Target Torneira 1\authoringinfo.xml" />
+    <None Include="Assets\Editor\Vuforia\TargetsetData\ObjectRecog_info.xml" />
+    <None Include="Assets\Editor\Vuforia\TargetsetData\tampa-objeto_info.xml" />
+    <None Include="Assets\Editor\Vuforia\modelo tampa\authoringinfo.xml" />
+    <None Include="Assets\StreamingAssets\Vuforia\ObjectRecog_OT.xml" />
+    <None Include="Assets\StreamingAssets\Vuforia\Target Torneira 1.xml" />
+    <None Include="Assets\StreamingAssets\Vuforia\Virtual_Buttons.xml" />
+    <None Include="Assets\StreamingAssets\Vuforia\WaterTap.xml" />
+    <None Include="Assets\StreamingAssets\Vuforia\WaterTap5Stars.xml" />
+    <None Include="Assets\StreamingAssets\Vuforia\modelo tampa.xml" />
+    <None Include="Assets\StreamingAssets\Vuforia\tampa-objeto_OT.xml" />
     <None Include="Assets\StreamingAssets\Vuforia\targets-instalacao.xml" />
     <None Include="Assets\Vuforia\Shaders\BrightTexture.shader" />
     <None Include="Assets\Vuforia\Shaders\CameraDiffuse.shader" />
@@ -255,6 +273,9 @@
     <None Include="Assets\Vuforia\Shaders\OutlineOpaque.shader" />
     <None Include="Assets\Vuforia\Shaders\Text3D.shader" />
     <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
+    <None Include="Assets\Vuforia\StreamingAssets\Editor\Vuforia\TargetsetData\ObjectRecog_info.xml" />
+    <None Include="Assets\Vuforia\StreamingAssets\Editor\Vuforia\Vuforia\ObjectRecog_OT.xml" />
+    <None Include="Assets\Vuforia\StreamingAssets\Editor\Vuforia\Vuforia\targets-instalacao.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

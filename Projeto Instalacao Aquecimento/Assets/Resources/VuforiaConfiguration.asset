@@ -16,8 +16,8 @@ MonoBehaviour:
     ufoLicenseKey: QVNmcmt1Ny8vLy8vQUFBQUtFUjNjQnY2cGsxWGhuN0N2NWlSYzQ5K2tkMXZsQXZkQVNOenVGQWp0RktibGNxQWx2RUl5WDVJdnFlSGMvK0MvcnZCbFlFczh1Q2dpQXRaUkQ3NWtDMXRTR0xwcEF1WENDQTZSbTRRbURhRThiTzk3dm9zMUFVSlQvTThoTDAvS1JZc0tPekZRR3dSd0Y4UlE5VW5WaWQ1eC9CZWgxd2ZMK0ZCWEszSGpEODVXSHJFdmVuclN0Mk9lTjB2cHl2VDFpcHloTSt2WWdiWmRlOENWTEtkOTEwTldna1BPNk1odDBOTC9oMDgwdHJ6cXBkYnQvR2VLNzgwVHF1dk43SWRyV3RvK0dCdGhmR05mTGRzUzJESStlZkFZZWwrRHZLUmttSy9xNHFwNldZU3N6U1pJTVpJVlNmNWpNcDlvN3dyT3F3T0hPemFmK3JORXNlOFRzTFFpcmU2eEUvTjBRSDJxaE5QNy9pMG1jV08=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
-    maxSimultaneousImageTargets: 1
-    maxSimultaneousObjectTargets: 1
+    maxSimultaneousImageTargets: 3
+    maxSimultaneousObjectTargets: 3
     useDelayedLoadingObjectTargets: 0
     cameraDirection: 0
     mirrorVideoBackground: 0
@@ -44,9 +44,11 @@ MonoBehaviour:
       ContainsMagnet: 0
   databaseLoad:
     dataSetsToLoad:
-    - targets-instalacao
+    - Virtual_Buttons
+    - WaterTap5Stars
     dataSetsToActivate:
-    - targets-instalacao
+    - Virtual_Buttons
+    - WaterTap5Stars
   videoBackground:
     clippingMode: 0
     numDivisions: 2
