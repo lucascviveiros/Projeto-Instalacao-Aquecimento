@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="Target Torneira 1"/>
+</Tracking>
+
+<Assembly name="Target Torneira 1s_assembly">
+<Part name="Target Torneira 1" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0000" translation="0.398358 0.0770507 6.10136" rotation="AD: 0.9979332130819576 0.13810947045164404 -0.545930905577906 204.85">
+
+</EntryPoint>
+
+</Assembly>
+</QCARConfig>

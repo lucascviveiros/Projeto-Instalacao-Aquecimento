@@ -17,7 +17,7 @@ using Vuforia;
 public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandler
 {
     public Canvas canvas_inicio;
-    public Text m_texto_inicio;
+    //public Text m_texto_inicio;
 
 
     #region PRIVATE_MEMBERS
@@ -39,7 +39,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
     protected virtual void Start()
     {
-        m_texto_inicio.text = "Mire no Marcador";
+      //  m_texto_inicio.text = "Mire no Marcador";
         mTrackableBehaviour = GetComponent<TrackableBehaviour>();
         if (mTrackableBehaviour)
             mTrackableBehaviour.RegisterTrackableEventHandler(this);
@@ -111,7 +111,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         foreach (var component in canvasComponents)
             component.enabled = true;
         //
-        m_texto_inicio.text = "";
+       // m_texto_inicio.text = "";
         
     }
 
@@ -133,7 +133,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         foreach (var component in canvasComponents)
             component.enabled = false;
         //
-        m_texto_inicio.text = "Mire no Marcador";
+   //     m_texto_inicio.text = "Mire no Marcador";
 
     }
 

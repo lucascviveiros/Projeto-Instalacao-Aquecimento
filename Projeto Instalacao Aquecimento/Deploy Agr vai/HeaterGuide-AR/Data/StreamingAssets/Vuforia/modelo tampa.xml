@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="modelo tampa"/>
+</Tracking>
+
+<Assembly name="modelo tampas_assembly">
+<Part name="modelo tampa" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="viewpoint_0000" translation="0.000203977 -0.0052166 0.055182" rotation="AD: -0.9994595768007373 -0.0462554026149679 1.011709911497566 176.321">
+
+</EntryPoint>
+
+</Assembly>
+</QCARConfig>

@@ -15,8 +15,5 @@ EditorBuildSettings:
     path: Assets/Scenes/SceneAnimHololens-2.unity
     guid: 2b4e92a7f437cfa4a93e36fc0b4b1151
   - enabled: 1
-    path: Assets/Scenes/SceneVirtualButton-3.unity
-    guid: afd8886a9102b5740a5c061cd57c9b28
-  - enabled: 1
     path: Assets/Scenes/SceneInstalacao-4.unity
     guid: 44996cad8b14d6f4499909b06e24d2db
