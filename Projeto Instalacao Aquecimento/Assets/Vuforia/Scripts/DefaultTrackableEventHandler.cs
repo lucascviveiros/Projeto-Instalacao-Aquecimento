@@ -17,7 +17,7 @@ using Vuforia;
 public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandler
 {
     public Canvas canvas_inicio;
-    //public Text m_texto_inicio;
+    public Text m_texto_inicio;
 
 
     #region PRIVATE_MEMBERS
@@ -72,12 +72,15 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
         {
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
-            OnTrackingFound();
+			m_texto_inicio.text= "";
+
+			OnTrackingFound();
         }
         else if (previousStatus == TrackableBehaviour.Status.TRACKED &&
                  newStatus == TrackableBehaviour.Status.NOT_FOUND)
         {
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
+			m_texto_inicio.text = "Focus on marker";
             OnTrackingLost();
         }
         else

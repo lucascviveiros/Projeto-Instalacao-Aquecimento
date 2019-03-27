@@ -33,7 +33,7 @@ public class BlueController : MonoBehaviour
 		mObj_adaptador.GetComponent<Renderer>().enabled = false;
 		mObj_adaptador.SetActive(false);
 
-		m_texto.text = "Retire a tampa";
+		m_texto.text = "1 - Remove the cover";
 		anim = this.GetComponent<Animator>();
 
 		Button btn = btn_next.GetComponent<Button>();
@@ -53,7 +53,7 @@ public class BlueController : MonoBehaviour
 		switch (caseSwitch)
 		{
 			case 1:
-				m_texto.text = "Retire o Pino";
+				m_texto.text = "2 - Remove the pin";
 
 				mObj_pino.GetComponent<Renderer>().enabled = true;
 				mObj_pino.SetActive(true);
@@ -72,7 +72,7 @@ public class BlueController : MonoBehaviour
 				caseSwitch++;
 				break;
 			case 2:
-				m_texto.text = "Rotacione para esquerda";
+				m_texto.text = "3 - Turn left";
 
 				mObj_pino.GetComponent<Renderer>().enabled = false;
 				mObj_pino.SetActive(false);
@@ -93,14 +93,14 @@ public class BlueController : MonoBehaviour
 				caseSwitch++;
 				break;
 			case 3:
-				m_texto.text = "Retire";
+				m_texto.text = "4 - Just Remove";
 				mObj_tampa.SetActive(false);
 				mObj_tampa.GetComponent<Renderer>().enabled = false;
 				GetComponent<Animator>().Play("animation_3_tampa");
 				caseSwitch++;
 				break;
 			case 4:
-				m_texto.text = "Pronto";
+				m_texto.text = "Congratulations ;)";
 				mObj_tampa_base.SetActive(false);
 				mObj_tampa_base.GetComponent<Renderer>().enabled = false;
 
@@ -115,7 +115,7 @@ public class BlueController : MonoBehaviour
 		switch (caseSwitch)
 		{
 			case 1:
-				m_texto.text = "Retire a tampa";
+				m_texto.text = "1 - Remove the cover";
 				mObj_tampa_base.GetComponent<Renderer>().enabled = true;
 				mObj_tampa_base.SetActive(true);
 
@@ -132,7 +132,7 @@ public class BlueController : MonoBehaviour
 				break;
 
 			case 2:
-				m_texto.text = "Retire o Pino";
+				m_texto.text = "2 - Remove the pin";
 
 				mObj_pino.GetComponent<Renderer>().enabled = true;
 				mObj_pino.SetActive(true);
@@ -153,7 +153,7 @@ public class BlueController : MonoBehaviour
 				caseSwitch--;
 				break;
 			case 3:
-				m_texto.text = "Rotacione para esquerda";
+				m_texto.text = "3 - Turn left";
 
 				mObj_pino.GetComponent<Renderer>().enabled = false;
 				mObj_pino.SetActive(false);
@@ -174,7 +174,7 @@ public class BlueController : MonoBehaviour
 				caseSwitch--;
 				break;
 			case 4:
-				m_texto.text = "Retire";
+				m_texto.text = "4 - Just Remove";
 				mObj_tampa.SetActive(false);
 				mObj_tampa.GetComponent<Renderer>().enabled = false;
 				mObj_tampa_base.SetActive(true);

@@ -435,7 +435,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas_inicio: {fileID: 0}
+  canvas_inicio: {fileID: 1279007820}
+  m_texto_inicio: {fileID: 1178830696}
 --- !u!114 &689600926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -451,7 +452,7 @@ MonoBehaviour:
   mPreserveChildSize: 0
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/WaterTap5Stars.xml
-  mExtendedTracking: 1
+  mExtendedTracking: 0
   mAspectRatio: 1
   mImageTargetType: 0
   mWidth: 1
@@ -663,6 +664,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1157368045}
   m_Mesh: {fileID: 4300000, guid: 51e6150a906b7f64dad2bdcaa02107be, type: 3}
+--- !u!114 &1178830696 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114559422293705344, guid: 5216758b5c833344e81bfc6bf94071d0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1293067666}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &1243203899
 Prefab:
   m_ObjectHideFlags: 0
@@ -764,6 +771,50 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114766565964888114, guid: 9783be71820b0434296772a127e6eaaf,
+        type: 2}
+      propertyPath: m_Text
+      value: 'Back
+
+        Animation'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114107844397220480, guid: 9783be71820b0434296772a127e6eaaf,
+        type: 2}
+      propertyPath: m_Text
+      value: 'Next
+
+        Animation'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114069841154388236, guid: 9783be71820b0434296772a127e6eaaf,
+        type: 2}
+      propertyPath: m_Text
+      value: 1 - Remove the cover
+      objectReference: {fileID: 0}
+    - target: {fileID: 114875502169421324, guid: 9783be71820b0434296772a127e6eaaf,
+        type: 2}
+      propertyPath: m_Text
+      value: AR Animation without overlapping the real model
+      objectReference: {fileID: 0}
+    - target: {fileID: 224185752279048460, guid: 9783be71820b0434296772a127e6eaaf,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -93.125
+      objectReference: {fileID: 0}
+    - target: {fileID: 224185752279048460, guid: 9783be71820b0434296772a127e6eaaf,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 573.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 224185752279048460, guid: 9783be71820b0434296772a127e6eaaf,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 631
+      objectReference: {fileID: 0}
+    - target: {fileID: 224185752279048460, guid: 9783be71820b0434296772a127e6eaaf,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 33.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9783be71820b0434296772a127e6eaaf, type: 2}
@@ -891,6 +942,11 @@ Prefab:
     - {fileID: 9500000, guid: 8b46874e80b5d79429e3f8189bb03bd2, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 8b46874e80b5d79429e3f8189bb03bd2, type: 3}
   m_IsPrefabParent: 0
+--- !u!223 &1279007820 stripped
+Canvas:
+  m_PrefabParentObject: {fileID: 223412157245124412, guid: 5216758b5c833344e81bfc6bf94071d0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1293067666}
 --- !u!1001 &1293067666
 Prefab:
   m_ObjectHideFlags: 0
@@ -992,6 +1048,26 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114692498104499674, guid: 5216758b5c833344e81bfc6bf94071d0,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 0.16025089
+      objectReference: {fileID: 0}
+    - target: {fileID: 114692498104499674, guid: 5216758b5c833344e81bfc6bf94071d0,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 0.48696437
+      objectReference: {fileID: 0}
+    - target: {fileID: 114692498104499674, guid: 5216758b5c833344e81bfc6bf94071d0,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 0.5735294
+      objectReference: {fileID: 0}
+    - target: {fileID: 114559422293705344, guid: 5216758b5c833344e81bfc6bf94071d0,
+        type: 2}
+      propertyPath: m_Text
+      value: Focus on marker
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5216758b5c833344e81bfc6bf94071d0, type: 2}

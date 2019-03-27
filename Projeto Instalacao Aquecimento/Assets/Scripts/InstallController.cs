@@ -14,9 +14,8 @@ public class InstallController : MonoBehaviour {
     public Button btn_back;
     public Text mText;
 
-    // Use this for initialization
-    void Start () {
-        mText.text = "Coloque os adaptadores conforme o modelo";
+	void Start () {
+        mText.text = "Place the adapters";
 
         mAdaptadores.GetComponent<Renderer>().enabled = true;
         mAdaptadores.SetActive(true);
@@ -39,7 +38,7 @@ public class InstallController : MonoBehaviour {
 
     private void NextAnimation()
     {
-        mText.text = "Coloque os parafusos no local indicado";
+        mText.text = "Fit the screws and turn";
         mRoscas.GetComponent<Renderer>().enabled = true;
         mRoscas.SetActive(true);
         GetComponent<Animator>().Play("mAnim_rosca");
@@ -48,13 +47,12 @@ public class InstallController : MonoBehaviour {
 
     private void BackAnimation()
     {
-        mText.text = "Coloque os adaptadores conforme o modelo";
+        mText.text = "Place the adapters";
         mRoscas.GetComponent<Renderer>().enabled = false;
         mRoscas.SetActive(false);
         GetComponent<Animator>().Play("mAnim_adap");
     }
 	
-	// Update is called once per frame
 	void Update () {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
